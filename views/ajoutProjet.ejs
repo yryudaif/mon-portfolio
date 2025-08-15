@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<h2 class="text-3xl font-semibold mb-6">Ajouter un projet</h2>
+
+<form action="/projets" method="POST" class="space-y-4 max-w-xl">
+  <div>
+    <label class="block mb-1 font-semibold">Titre du projet</label>
+    <input type="text" name="titre" required class="w-full border p-2 rounded">
+  </div>
+
+  <div>
+    <label class="block mb-1 font-semibold">Description</label>
+    <textarea name="description" required class="w-full border p-2 rounded h-32"></textarea>
+  </div>
+
+  <div>
+    <label class="block mb-1 font-semibold">Lien (optionnel)</label>
+    <input type="url" name="lien" class="w-full border p-2 rounded">
+  </div>
+
+  <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+    Ajouter le projet
+  </button>
+</form>
+
+<%- include('partials/footer') %>

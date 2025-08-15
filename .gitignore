@@ -1,0 +1,11 @@
+# Fichiers de configuration sensibles
+.env
+
+# Dossiers node
+node_modules/
+
+# Fichiers système
+.DS_Store
+
+# Fichiers de dev (à ne pas déployer)
+utils/generateHash.js

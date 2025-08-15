@@ -1,0 +1,52 @@
+mon-portfolio/
+│
+├── db/
+│   └── database.js                ← SQLite + projets/compétences
+│
+├── models/
+│   └── projectModel.js           ← Accès aux projets dans la base
+│
+├── routes/
+│   └── mainRoutes.js             ← Toutes les routes de l'app
+│
+├── middlewares/
+│   └── verifyAdminToken.js       ← Middleware JWT pour sécuriser les routes admin
+│
+├── controllers/
+│   └── authController.js         ← Gère la connexion admin + génération token
+│   └── projectController.js      ← Gère l’ajout des projets, etc.
+│
+├── views/
+│   ├── partials/
+│   │   ├── header.ejs            ← En-tête commun
+│   │   └── footer.ejs            ← Pied de page commun
+│   ├── index.ejs                 ← Page d'accueil
+│   ├── projets.ejs               ← Liste des projets
+│   ├── contact.ejs               ← Page de contact
+│   ├── ajoutProjet.ejs           ← Formulaire d’ajout (admin)
+│   └── login.ejs                 ← Page de login admin
+│
+├── public/
+│   ├── css/
+│   │   └── style.css             ← Ton style personnalisé
+│   └── images/                   ← Logos, photos, etc.
+│
+├── utils/
+│   └── generateHash.js           ← Script temporaire pour générer le hash du mot de passe (développement uniquement)
+│
+├── .env                          ← Variables d’environnement (JWT_SECRET, etc.)
+├── .gitignore                    ← Pour exclure generateHash.js ou .env
+├── app.js                        ← Point d’entrée de l'app Express
+├── package.json
+
+
+
+⚠️ Remarque de sécurité :
+
+On utilise POST (et pas GET) pour la suppression = bonne pratique
+
+En production, tu utiliserais un token CSRF (non nécessaire ici)
+
+[dotenv@17.2.1] injecting env (1) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+
+[dotenv@17.2.1] injecting env (1) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
