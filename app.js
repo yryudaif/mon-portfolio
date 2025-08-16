@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 require('dotenv').config();
 
 // Middleware
-app.use(express.static('public')); // Pour le CSS, images, etc.
+app.use("/public",express.static('public')); // Pour le CSS, images, etc.
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 

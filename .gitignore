@@ -8,4 +8,4 @@ node_modules/
 .DS_Store
 
 # Fichiers de dev (à ne pas déployer)
-utils/generateHash.js
+utils/
