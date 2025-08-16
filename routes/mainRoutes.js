@@ -17,7 +17,7 @@ router.get('/projets', (req, res) => {
   });
 });
 
-// Colle ici le hash généré (étape 3)
+// Hash généré
 const ADMIN_PASSWORD_HASH = '$2b$10$z0R9wECgY4YCHISEQQU0s.aUFYwFE3CwnCaTQ2c69BoOKxV5kvUmC';
 
 // GET page login
