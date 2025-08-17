@@ -46,7 +46,7 @@ router.get('/admin/ajout-projet', verifyAdminToken, (req, res) => {
   res.render('ajoutProjet', { title: 'Ajouter un projet' });
 });
 
-// POST ajout projet (protégé aussi)
+// POST ajout projet (protégé)
 router.post('/admin/ajout-projet', verifyAdminToken, (req, res) => {
   // ici, tu récupères les données du formulaire et tu les ajoutes dans ta DB
   const { titre, description, lien } = req.body;
@@ -64,6 +64,16 @@ router.post('/admin/ajout-projet', verifyAdminToken, (req, res) => {
   });
 });
 
+//POST supprimer projet (protégé)
+router.post('/projets/:id/supprimer', verifyAdminToken, (req,res) => {
+  projectModel.deleteProject(req.params.id, (err) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send('Erreur lors de la suppression.');
+    }
+    res.redirect('/projets'); // redirige vers la liste des projets
+  });
+});
 
 
 // Affiche le formulaire contact
