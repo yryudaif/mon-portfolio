@@ -44,9 +44,3 @@ mon-portfolio/
 ⚠️ Remarque de sécurité :
 
 On utilise POST (et pas GET) pour la suppression = bonne pratique
-
-En production, tu utiliserais un token CSRF (non nécessaire ici)
-
-[dotenv@17.2.1] injecting env (1) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
-
-[dotenv@17.2.1] injecting env (1) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
