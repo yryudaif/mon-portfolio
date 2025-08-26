@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %> | Mon Portfolio</title>
+  <!-- ✅ Tailwind CSS CDN -->
+  <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="p-4 bg-white shadow-md">
+    <nav class="container mx-auto flex justify-between">
+      <h1 class="text-xl font-bold"><a href="/">Mon Portfolio</a></h1>
+      <div>
+        <a href="/" class="text-blue-500 hover:underline">Accueil</a>
+        <a href="/projets" class="ml-4 text-blue-500 hover:underline">Projets</a>
+        <a href="/contact" class="ml-4 text-blue-500 hover:underline">Contact</a>
+        <a href="/admin/ajout-projet" class="ml-4 text-blue-500 hover:underline">Ajouter un projet</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container mx-auto py-8">
