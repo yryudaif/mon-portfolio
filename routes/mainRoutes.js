@@ -95,8 +95,8 @@ router.post('/contact', async (req, res) => {
   const subject = "subject"
   try {
       await resend.emails.send({
-        from: process.env.EMAIL_USER,
-        to: process.env.EMAIL_USER,
+        from: process.env.EMAIL_SENDER,
+        to: process.env.EMAIL_TARGET,
         subject: `Nouveau message: ${subject}`,
         html: `
           <p><strong>De :</strong> ${email}</p>
