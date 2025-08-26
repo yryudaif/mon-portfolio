@@ -73,6 +73,6 @@ N’hésite pas à me contacter pour toute question, collaboration ou opportunit
 
 Formulaire contact : https://yacinesaadoune.com/contact
 
-Email : [yacine.saadoune@hotmail.fr]
+Email : yacine.saadoune@hotmail.fr
 
 LinkedIn : 
