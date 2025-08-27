@@ -83,7 +83,6 @@ router.get('/contact', (req, res) => {
   res.render('contact', { title: 'Contact', message: null });
 });
 
-// Clé API Resend
 const resend = new Resend(process.env.RESEND_API_KEY);
 // Reçoit les données du formulaire
 router.post('/contact', async (req, res) => {

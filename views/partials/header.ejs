@@ -2,20 +2,47 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %> | Mon Portfolio</title>
-  <!-- ✅ Tailwind CSS CDN -->
-  <link rel="stylesheet" href="/public/css/styles.css">
+  <!-- ✅ Tailwind CSS -->
+   <link rel="stylesheet" href="/public/css/styles.css">
+  
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <header class="p-4 bg-white shadow-md">
-    <nav class="container mx-auto flex justify-between">
-      <h1 class="text-xl font-bold"><a href="/">Mon Portfolio</a></h1>
-      <div>
-        <a href="/" class="text-blue-500 hover:underline">Accueil</a>
-        <a href="/projets" class="ml-4 text-blue-500 hover:underline">Projets</a>
-        <a href="/contact" class="ml-4 text-blue-500 hover:underline">Contact</a>
-        <a href="/admin/ajout-projet" class="ml-4 text-blue-500 hover:underline">Ajouter un projet</a>
-      </div>
-    </nav>
-  </header>
+<header class="p-4 bg-white shadow-md">
+  <nav class="container mx-auto flex justify-between items-center relative">
+    <h1 class="text-xl font-bold"><a href="/">Mon Portfolio</a></h1>
+
+    <!-- Bouton burger visible en mobile -->
+    <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+      <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+
+    <!-- Menu -->
+    <div id="menu"
+         class="hidden absolute top-full right-0 mt-2 bg-white shadow-md rounded-md w-48 flex flex-col space-y-2 p-4
+                md:static md:flex md:flex-row md:space-x-6 md:w-auto md:shadow-none md:p-0 md:bg-transparent md:rounded-none">
+      <a href="/" class="text-blue-500 hover:underline">Accueil</a>
+      <a href="/projets" class="text-blue-500 hover:underline">Projets</a>
+      <a href="/contact" class="text-blue-500 hover:underline">Contact</a>
+      <a href="/admin/ajout-projet" class="text-blue-500 hover:underline">Ajouter un projet</a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  });
+</script>
+
   <main class="container mx-auto py-8">
