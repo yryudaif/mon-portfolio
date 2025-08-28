@@ -26,7 +26,8 @@ Outils : Git, Github, Docker, Balsamiq, Canva, MongoDBatlas etc...
 
 📂 Structure du portfolio
 
-<pre lang="md"> ```mon-portfolio/
+<pre lang="md"> ```
+  mon-portfolio/
 │
 ├── db/
 │   └── database.js                ← SQLite + projets/compétences
@@ -65,7 +66,8 @@ Outils : Git, Github, Docker, Balsamiq, Canva, MongoDBatlas etc...
 ├── .env                          ← Variables d’environnement (JWT_SECRET, etc.)
 ├── .gitignore                    ← Pour exclure generateHash.js ou .env
 ├── app.js                        ← Point d’entrée de l'app Express
-├── package.json``` </pre>
+├── package.json
+``` </pre>
 
 📫 Me contacter
 
