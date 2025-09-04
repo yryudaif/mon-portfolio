@@ -1,7 +1,7 @@
 Mon Portfolio
 
 Bienvenue sur mon portfolio !
-Je suis Yacine SAADOUNE, développeur full-stack. Ce portfolio présente mes projets, et compétences.
+Je suis Yacine SAADOUNE, apprenti développeur full-stack. Ce portfolio présente mes projets, et compétences.
 
 🚀 À propos de moi
 
