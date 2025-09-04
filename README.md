@@ -13,7 +13,7 @@ Contact : https://yacinesaadoune.com/contact
 
 💼 Projets
 
-Voici quelques projets que j’ai réalisés : https://yacinesaadoune.com/projets
+Voici quelques projets que j'ai réalisés : https://yacinesaadoune.com/projets
 
 
 🛠️ Compétences
@@ -43,7 +43,7 @@ Outils : Git, Github, Docker, Balsamiq, Canva, MongoDBatlas etc...
 │
 ├── controllers/
 │   └── authController.js         ← Gère la connexion admin + génération token
-│   └── projectController.js      ← Gère l’ajout des projets, etc.
+│   └── projectController.js      ← Gère l'ajout des projets, etc.
 │
 ├── views/
 │   ├── partials/
@@ -52,7 +52,7 @@ Outils : Git, Github, Docker, Balsamiq, Canva, MongoDBatlas etc...
 │   ├── index.ejs                 ← Page d'accueil
 │   ├── projets.ejs               ← Liste des projets
 │   ├── contact.ejs               ← Page de contact
-│   ├── ajoutProjet.ejs           ← Formulaire d’ajout (admin)
+│   ├── ajoutProjet.ejs           ← Formulaire d'ajout (admin)
 │   └── login.ejs                 ← Page de login admin
 │
 ├── public/
@@ -63,18 +63,16 @@ Outils : Git, Github, Docker, Balsamiq, Canva, MongoDBatlas etc...
 ├── utils/
 │   └── generateHash.js           ← Script temporaire pour générer le hash du mot de passe (développement uniquement)
 │
-├── .env                          ← Variables d’environnement (JWT_SECRET, etc.)
+├── .env                          ← Variables d'environnement (JWT_SECRET, etc.)
 ├── .gitignore                    ← Pour exclure generateHash.js ou .env
-├── app.js                        ← Point d’entrée de l'app Express
+├── app.js                        ← Point d'entrée de l'app Express
 ├── package.json
 ``` </pre>
 
 📫 Me contacter
 
-N’hésite pas à me contacter pour toute question, collaboration ou opportunité !
+N'hésite pas à me contacter pour toute question, collaboration ou opportunité !
 
 Formulaire contact : https://yacinesaadoune.com/contact
 
 Email : yacine.saadoune@hotmail.fr
-
-LinkedIn : 
